@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FinSync AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar"><h2>FinSync AI</h2></nav>
+
+<div class="container">
+
+    <!-- Loan Analyzer -->
+    <div class="card">
+        <h2>Loan Analysis</h2>
+
+        <input id="income" type="number" placeholder="Monthly Income (₹)">
+        <input id="expenses" type="number" placeholder="Monthly Expenses (₹)">
+        <input id="amount" type="number" placeholder="Loan Amount (₹)">
+        <input id="tenure" type="number" placeholder="Tenure (months)">
+        <input id="interest" type="number" placeholder="Interest Rate (%)">
+
+        <button class="btn" onclick="analyzeLoan()">Analyze Loan</button>
+
+        <!-- Risk Alert -->
+        <div id="risk_alert" class="risk-alert"></div>
+
+        <div id="result" class="output"></div>
+    </div>
+
+    <!-- Dashboard (NEW but same style) -->
+    <div class="card">
+        <h2>Financial Dashboard</h2>
+        <div class="dashboard">
+            <div class="dash-box">EMI<br><span id="d_emi">–</span></div>
+            <div class="dash-box">Stress<br><span id="d_stress">–</span></div>
+            <div class="dash-box">Eligibility<br><span id="d_eligibility">–</span></div>
+            <div class="dash-box">Credit Score<br><span id="d_credit">–</span></div>
+        </div>
+        <canvas id="myChart"></canvas>
+    </div>
+
+    <!-- Credit Score -->
+    <div class="card">
+        <h2>Credit Score Simulator</h2>
+        <button class="btn" onclick="calculateCreditScore()">Get Credit Score</button>
+        <div id="credit_score_output" class="output"></div>
+    </div>
+
+    <!-- Loan Comparison -->
+    <div class="card">
+        <h2>Loan Comparison Tool</h2>
+        <button class="btn-secondary" onclick="compareLoans()">Compare Two Loans</button>
+        <div id="compare_output" class="output"></div>
+    </div>
+
+    <!-- AI Advisor -->
+    <div class="card">
+        <h2>AI Advisor</h2>
+        <input id="ai_question" type="text" placeholder="Ask about your loan">
+        <button class="btn" onclick="askAI()">Ask</button>
+        <div id="ai_reply" class="output"></div>
+    </div>
+
+    <!-- History -->
+    <div class="card">
+        <h2>Previous Analyses</h2>
+        <button class="btn-secondary" onclick="loadHistory()">Load History</button>
+        <div id="history" class="output"></div>
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

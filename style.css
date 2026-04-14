@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    background: #0d0d0d;
+    font-family: "Inter", sans-serif;
+    color: #fff;
+}
+
+.navbar {
+    width: 100%;
+    padding: 15px 30px;
+    background: #111;
+    border-bottom: 1px solid #222;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 25px auto;
+}
+
+.card {
+    background: #141414;
+    padding: 25px;
+    border-radius: 14px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 15px rgba(0, 255, 200, 0.15);
+}
+
+.card h2 {
+    color: #00ffbb;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 12px;
+    background: #1d1d1d;
+    border: 1px solid #333;
+    border-radius: 8px;
+    color: white;
+}
+
+.btn {
+    background: #00ffbb;
+    color: #000;
+    padding: 12px;
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-secondary {
+    background: #222;
+    color: #00ffbb;
+    padding: 12px;
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.output {
+    background: #1c1c1c;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+    border-left: 4px solid #00ffbb;
+}
+
+/* NEW ADDITIONS (no layout change) */
+
+.risk-alert {
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.dash-box {
+    background: #1d1d1d;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 14px;
+}
